@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-frag-master.flake = false;
+  inputs.src-frag-master.ref   = "refs/heads/master";
   inputs.src-frag-master.owner = "fragworks";
-  inputs.src-frag-master.ref   = "master";
   inputs.src-frag-master.repo  = "frag";
   inputs.src-frag-master.type  = "github";
   
