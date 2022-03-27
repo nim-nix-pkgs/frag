@@ -11,6 +11,7 @@
   inputs.src-frag-master.ref   = "refs/heads/master";
   inputs.src-frag-master.owner = "fragworks";
   inputs.src-frag-master.repo  = "frag";
+  inputs.src-frag-master.dir   = "";
   inputs.src-frag-master.type  = "github";
   
   inputs."sdl2".owner = "nim-nix-pkgs";
