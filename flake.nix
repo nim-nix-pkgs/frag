@@ -7,14 +7,6 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs."frag-master".dir   = "master";
-  inputs."frag-master".owner = "nim-nix-pkgs";
-  inputs."frag-master".ref   = "master";
-  inputs."frag-master".repo  = "frag";
-  inputs."frag-master".type  = "github";
-  inputs."frag-master".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."frag-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
-  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
